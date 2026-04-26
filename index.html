@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NatureScan — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #F8F7F4;
+      color: #2C2C2A;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: #042C53;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #FFFFFF;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: #5DCAA5;
+      font-size: 15px;
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .meta {
+      background: #E1F5EE;
+      border-left: 4px solid #1D9E75;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #085041;
+    }
+
+    .meta strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #042C53;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1D9E75;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1D9E75;
+      margin: 24px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #444441;
+    }
+
+    ul {
+      margin: 8px 0 16px 20px;
+      color: #444441;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #FAEEDA;
+      border-left: 4px solid #EF9F27;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #633806;
+    }
+
+    .contact-box {
+      background: #042C53;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      color: #5DCAA5;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: #E6F1FB;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .contact-box a {
+      color: #5DCAA5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #888780;
+      border-top: 1px solid #D3D1C7;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: #1D9E75;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      .container { padding: 24px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 NatureScan</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<div class="container">
+
+  <div class="meta">
+    <strong>Effective date: May 1, 2026</strong>
+    Last updated: April 26, 2026 &nbsp;|&nbsp; App version: 1.0
+  </div>
+
+  <p>
+    NatureScan ("we", "our" or "the app") is a mobile application that helps you
+    understand what is in your food and cosmetics by scanning ingredient lists and
+    providing AI-powered health scores. This Privacy Policy explains what information
+    we collect, how we use it, and your rights regarding your data.
+  </p>
+
+  <p>
+    By downloading or using NatureScan, you agree to the practices described in
+    this policy. If you do not agree, please do not use the app.
+  </p>
+
+  <!-- ── 1 ─────────────────────────────────────────────────────── -->
+  <h2>1. Information We Collect</h2>
+
+  <h3>Information you provide</h3>
+  <p>
+    NatureScan does not require you to create an account. We do not collect your
+    name, email address, phone number or any other personal identifying information.
+  </p>
+
+  <h3>Camera and photos</h3>
+  <p>
+    When you scan an ingredient list, the app uses your device camera to capture
+    an image or extract text. This data is processed as follows:
+  </p>
+  <ul>
+    <li>
+      <strong>On-device OCR (text recognition)</strong> — handled entirely on your
+      device using Google ML Kit. The image never leaves your phone for this step.
+    </li>
+    <li>
+      <strong>AI analysis</strong> — the extracted ingredient text (or the image
+      itself as a fallback) is sent to the Anthropic API to generate a health score.
+      See Section 3 for details.
+    </li>
+    <li>
+      <strong>Photos are not stored</strong> — NatureScan does not save photos to
+      your gallery or our servers. Images are used only for the current scan and
+      discarded immediately after.
+    </li>
+  </ul>
+
+  <h3>Scan history and saved lists</h3>
+  <p>
+    Your scan results, My Healthy Choices and Products to Avoid lists are stored
+    locally on your device using Android SharedPreferences. This data never leaves
+    your device and is not accessible to us.
+  </p>
+
+  <h3>Usage data</h3>
+  <p>
+    We do not use analytics tools or track how you use the app. We do not collect
+    crash reports, session data, or any behavioural information.
+  </p>
+
+  <!-- ── 2 ─────────────────────────────────────────────────────── -->
+  <h2>2. How We Use Your Information</h2>
+
+  <p>The only data processing that occurs in NatureScan is:</p>
+  <ul>
+    <li>
+      Sending ingredient text or images to the Anthropic API to generate a
+      naturalness or safety score for the product you are scanning.
+    </li>
+    <li>
+      Storing your scan history and saved product lists locally on your device
+      so you can refer back to them.
+    </li>
+  </ul>
+
+  <p>
+    We do not use your data for advertising, profiling, marketing or any purpose
+    other than operating the core features of the app.
+  </p>
+
+  <!-- ── 3 ─────────────────────────────────────────────────────── -->
+  <h2>3. Third-Party Services</h2>
+
+  <h3>Anthropic API</h3>
+  <p>
+    NatureScan uses the Anthropic Claude API to analyse ingredient lists. When you
+    scan a product, the ingredient text extracted from the label is sent to
+    Anthropic's servers for processing.
+  </p>
+  <ul>
+    <li>Data sent: ingredient text from product labels</li>
+    <li>Data NOT sent: your identity, location, device ID or any personal information</li>
+    <li>Purpose: generating health scores for the scanned product</li>
+    <li>
+      Anthropic's privacy policy:
+      <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>
+    </li>
+  </ul>
+
+  <div class="highlight">
+    <strong>Important:</strong> Ingredient lists are product information, not personal
+    information. We never send anything that could identify you to Anthropic or any
+    other third party.
+  </div>
+
+  <h3>Google ML Kit</h3>
+  <p>
+    NatureScan uses Google ML Kit Text Recognition for on-device OCR. This runs
+    entirely on your device and does not send images or text to Google.
+  </p>
+  <ul>
+    <li>
+      Google ML Kit privacy information:
+      <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a>
+    </li>
+  </ul>
+
+  <h3>No other third-party services</h3>
+  <p>
+    NatureScan does not use Google Analytics, Firebase, Facebook SDK, advertising
+    networks, crash reporting tools or any other third-party data collection service.
+  </p>
+
+  <!-- ── 4 ─────────────────────────────────────────────────────── -->
+  <h2>4. Data Storage and Security</h2>
+
+  <p>
+    All your personal data — scan history, saved products, preferences — is stored
+    locally on your Android device. It is never transmitted to our servers because
+    we do not operate any servers or databases.
+  </p>
+
+  <p>
+    When you uninstall NatureScan, all locally stored data is permanently deleted
+    from your device.
+  </p>
+
+  <p>
+    The only external transmission that occurs is sending ingredient text to the
+    Anthropic API, which is done over an encrypted HTTPS connection.
+  </p>
+
+  <!-- ── 5 ─────────────────────────────────────────────────────── -->
+  <h2>5. Children's Privacy</h2>
+
+  <p>
+    NatureScan is rated for everyone (3+) on the Google Play Store. The app does
+    not collect any personal information from users of any age. We do not knowingly
+    collect data from children under 13.
+  </p>
+
+  <!-- ── 6 ─────────────────────────────────────────────────────── -->
+  <h2>6. Permissions We Request</h2>
+
+  <p>NatureScan requests the following Android permissions:</p>
+  <ul>
+    <li>
+      <strong>CAMERA</strong> — to photograph ingredient lists for scanning.
+      Required for the core scanning feature.
+    </li>
+    <li>
+      <strong>INTERNET</strong> — to send ingredient text to the Anthropic API
+      and receive health scores.
+    </li>
+    <li>
+      <strong>WRITE_EXTERNAL_STORAGE</strong> — to save share card images to your
+      device when you choose to share a scan result. Only used when you actively
+      tap the Share button.
+    </li>
+  </ul>
+
+  <p>
+    We do not request access to your contacts, location, microphone, calendar,
+    messages or any other sensitive data.
+  </p>
+
+  <!-- ── 7 ─────────────────────────────────────────────────────── -->
+  <h2>7. Your Rights</h2>
+
+  <p>Because NatureScan stores all data locally on your device, you have full
+  control at all times:</p>
+  <ul>
+    <li>
+      <strong>Access</strong> — all your data is visible within the app in the
+      My Health section.
+    </li>
+    <li>
+      <strong>Delete individual scans</strong> — swipe left on any scan in
+      My Health to delete it.
+    </li>
+    <li>
+      <strong>Delete all data</strong> — tap the trash icon in My Health to
+      clear your entire history.
+    </li>
+    <li>
+      <strong>Delete everything</strong> — uninstalling NatureScan permanently
+      removes all app data from your device.
+    </li>
+  </ul>
+
+  <!-- ── 8 ─────────────────────────────────────────────────────── -->
+  <h2>8. Data Sharing</h2>
+
+  <p>
+    We do not sell, rent, trade or share your data with any third party for
+    commercial purposes. The only data transfer that occurs is sending ingredient
+    text to the Anthropic API solely to power the scoring feature.
+  </p>
+
+  <!-- ── 9 ─────────────────────────────────────────────────────── -->
+  <h2>9. Changes to This Policy</h2>
+
+  <p>
+    If we make significant changes to this Privacy Policy — for example when we
+    introduce premium features or new functionality — we will update the effective
+    date at the top of this page and notify users via an in-app notice.
+  </p>
+
+  <p>
+    Continued use of NatureScan after changes are posted constitutes acceptance
+    of the updated policy.
+  </p>
+
+  <!-- ── 10 ────────────────────────────────────────────────────── -->
+  <h2>10. Disclaimer</h2>
+
+  <p>
+    NatureScan provides ingredient scores as a helpful guide based on AI analysis.
+    Scores are not a substitute for professional medical, nutritional or dermatological
+    advice. Always consult a qualified professional for health decisions.
+  </p>
+
+  <!-- ── CONTACT ───────────────────────────────────────────────── -->
+  <div class="contact-box">
+    <h3>Questions about your privacy?</h3>
+    <p>We are happy to answer any questions about how NatureScan handles your data.</p>
+    <p>
+      Email us at
+      <a href="mailto:jchallo.biz@gmail.com</a>
+    </p>
+    <p style="margin-top: 12px; font-size: 13px; color: #85B7EB;">
+      NatureScan &nbsp;|&nbsp; Nairobi, Kenya
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 NatureScan &nbsp;&nbsp;|&nbsp;&nbsp;
+  <span>Know before you buy 🌿</span> &nbsp;&nbsp;|&nbsp;&nbsp;
+  Made in Kenya 🇰🇪
+</footer>
+
+</body>
+</html>
